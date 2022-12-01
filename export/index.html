@@ -2,57 +2,63 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<title>raizy cli</title>
+  <title>俺たちのスライド</title>
 
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reset.css">
-	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reveal.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reset.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reveal.css">
 
-	
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	  <!-- highlight Theme -->
-  	
-	  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
-	
+  <!-- highlight Theme -->
+  
+  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+  
 	
 		
-	<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	<link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/chalkboard/style.css">
 	
 	
 	
-		<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/customcontrols/style.css">
+  
 	
-	<link rel="stylesheet" href="libs/styles/tasklist.css">
 
 
 
   <!-- Revealjs Theme -->
   
-  	<link rel="stylesheet" href="libs/reveal.js/4.1.3/theme/black.css" id="theme">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/theme/black.css" id="theme">
   
   
+
+  <link rel="stylesheet" href="libs/styles/tasklist.css">
+	<link rel="stylesheet" href="libs/styles/iota.css">
+	<link rel="stylesheet" href="libs/styles/layout.css">
 
 
   <!-- Revealjs Theme -->
   
 
- 
+   <!-- css list -->
+	
+
+   
+
 </head>
 
 <body>
-  
 
+   
 
   <div class="reveal">
 
@@ -65,357 +71,53 @@
     
         <section >
             
-            <h1>怠惰な私のコマンドライン活用(ネタかぶり)</h1>
-<p>2022-05-20 at G’s Fukuoka
-alt9800</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>最近作ったもの</h2>
-<p>地図系のプロダクトで遊んでいます</p>
-<p><a href="https://alt9800.github.io/visualization/shibuya-plateau/">https://alt9800.github.io/visualization/shibuya-plateau/</a></p>
-<p>Three.js + G空間情報センターのPlateau</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>他には</h2>
-<p>Uberが整備しているdeck.GLで遊んだり</p>
-<p>レーザーカッターを使ってアクリル/木材/布に地図書いたりしてます</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>さて</h1>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>コマンドラインなれてきましたか？</h2>
-<p>コマンドラインで作業し始めると全てがCLIで完結してほしい病に囚われます。</p>
-<p>(世の中がCLIとHTTPだけで出来ていたらいいのに…)</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>今日話すこと</h1>
-<ul>
-<li>ターミナルにショートカットを作ろう!</li>
-<li>ターミナルからブラウジングしたい</li>
-<li>ターミナルからツイートしたい</li>
-</ul>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>ターミナルの設定について</h2>
-<ul>
-<li>macのターミナルのシェルとしてはbashやzshが動いている</li>
-<li>環境変数の設定は(<code>~/.bashrc</code>や<code>~/.zshenv</code>や<code>~/.zshrc</code>)</li>
-<li>zshには更に Oh-my-Zsh が拡張としてあり、デフォルトで素敵なテーマが入る (Candy)</li>
-</ul>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>1. ターミナルにショートカットを作ろう!</h1>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>コマンドのショートカット -&gt; aliasを使う</h2>
-<p><code>alias gg=&quot;git add .;git commit -m &quot;fix&quot;;&quot;</code></p>
-<p><code>alias js=&quot;~/dev/javascript&quot;</code></p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3>ちなみに</h3>
-<p>ailis自体は結構身近で、</p>
-<p>例えばDebianなどの<code>vi</code>は</p>
-<p><code>alias vi=/bin/vim</code></p>
-<p>みたいに標準でエイリアスが効いてるパターンがある</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3>さらに</h3>
-<p><code>ls</code>コマンドなども</p>
-<pre><code>alias ls='ls --color=auto'
-</code></pre>
-<p>引数を省略していたり、</p>
-<pre><code>alias la='ls -a -l'
-</code></pre>
-<p>みたいな感じで便利なオプションの省略形があったりする。</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3>知っておくと良いこと</h3>
-<p>UNIX系のシステムでは「<strong>シンボリックリンク</strong>」という機能が使えて、aliasと適宜使い分けると良い。
-実態としてはGUIのFinder(ファイルエクスプローラ)からも使える「ショートカット」になっている。
-例えば</p>
-<pre><code class="language-bash">ln -s javascript js
-tree -L 1
-.
-├── js
-└── javascript
-
-</code></pre>
-<p>という感じで<code>cd js</code>でも<code>cd javascript</code>でも同じ場所に移動でき、
-かつ階層をまたぐような使い方も。</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>2. ターミナルからブラウジングをしよう！</h1>
-<p>(curlでええやんというツッコミはなしで…)</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>usage</h2>
-<pre><code class="language-sh">
-brew install w3m
-w3m https://www.google.com/
-
-</code></pre>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3>ちなみに</h3>
-<p>Linuxなら<code>Lynx</code>や<code>firefox</code>が取り回しがいい</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>3. ターミナルからTwitterしよう</h1>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>flumtter</h2>
-<p>(Flutterではない…)</p>
-<p>flum1025/flumtter: ruby twitter client
-<a href="https://github.com/flum1025/flumtter">https://github.com/flum1025/flumtter</a></p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>コマンド</h2>
-<pre><code class="language-bash">
-brew install ruby tmux
-gem install flumtter
-
-</code></pre>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>関数を作ろう</h2>
-<pre><code class="language-bash">
-function tweet ()
-{
-  tmp=$1
-  flumtter --name {ここにアカウント名} --tweet &quot;$tmp&quot;
-  echo 'done!'
-}
-
-</code></pre>
-<p>[簡単な解説]
-$1 に引数が渡されて、$tmp として実行されている</p>
-<p>(エラーハンドリングしてないけど)</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>実際にはこんな感じで打つ</h2>
-<pre><code class="language-sh">tweet &quot;G'sアカデミーに来たよ #Webなんでも勉強会&quot;
-
-</code></pre>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>ただし…</h2>
-<p>大問題があって、ターミナルは日本語(複数バイト文字)の入力待受を繰り返すとアプリケーションがクラッシュする</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <p>大体以上、ですが…</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>おすすめ記事</h1>
-<p>お前らのターミナルはダサい - Qiita
-<a href="https://qiita.com/kinchiki/items/57e9391128d07819c321">https://qiita.com/kinchiki/items/57e9391128d07819c321</a></p>
-<p>お前らのターミナルはダサい(Windows版) - Qiita
-<a href="https://qiita.com/namacha_411/items/d6527b2f4f3800fa00fa">https://qiita.com/namacha_411/items/d6527b2f4f3800fa00fa</a></p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>仕事中でもDJがしたくなったら</h2>
-<p><a href="https://qiita.com/amaretto/items/f36c948220eb88b82700">https://qiita.com/amaretto/items/f36c948220eb88b82700</a></p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3>補足:最近はRust製のコマンドラインツールが流行っている。</h3>
-<ul>
-<li>bat</li>
-<li>tv-cli</li>
-</ul>
-<p>いずれも<code>cargo</code>で入る</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>今回私が伺いたいこと(Issue)</h2>
-<p>Windows環境での環境でのCLIの&quot;最強化&quot;</p>
-<p>そもそもコマンドプロンプト(Dos窓)、PowerShellを使うといいのか？</p>
-<p>(みんなWSL2で完結？Githbashを使う？)</p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h1>Enjoy</h1>
+            <h1>ここにいろいろ入るはず</h1>
 <hr>
+<p>↓</p>
+<hr>
+<h2>空白</h2>
 
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <div class="reveal">
+  <div class="slides">
+    <section>
+    Horizontal Slide
+    こういう感じで書くと縦方向のスライドになる
+    (markdownから適切に縦スライドを作成する方法がわからないのでhtmlを直書きしている)
+    </section>
+     <code>
+    <div class="reveal">
+    <div class="slides">
+    <section>
+      <section>Vertical Slide 1</section>
+      <section>Vertical Slide 2</section>
+    </section>
+      </div>
+      </div>
+    </code>
+    <section>
+      <section>Vertical Slide 1</section>
+      <section>Vertical Slide 2</section>
+    </section>
+  </div>
+</div>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>メモメモ</p>
+<iframe></iframe>
             </section>
     
 
@@ -425,48 +127,50 @@ $1 に引数が渡されて、$tmp として実行されている</p>
 
   </div>
 
-  	
-	<script src="libs/reveal.js/4.1.3/reveal.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/search/search.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+  <div class="line left"></div>
+  <div class="line right"></div>
 
-	<script src="libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  <script src="libs/reveal.js/4.3.1/reveal.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/notes/notes.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/markdown/markdown.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/highlight/highlight.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/math/math.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/fullscreen/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/svg.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/Chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/d3.v3.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3.patch.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/queue.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/topojson.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/function-plot.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/customcontrols/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/embed-tweet/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/verticator/verticator.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/zoom/zoom.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/search/search.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/menu/menu.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chalkboard/plugin.js"></script>
+
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
   
-  	<script src="libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
-  	<script src="libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
-  
-  	<script src="libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script>
-	  <script src="libs/reveal.js/4.1.3/plugin/anything/Chart.min.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/d3.v3.min.js"></script>				
-	<script src="libs/reveal.js/4.1.3/plugin/anything/d3.patch.js"></script>			
-	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/queue.v1.min.js"></script>		
-	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/topojson.v1.min.js"></script>		
-	<script src="libs/reveal.js/4.1.3/plugin/anything/function-plot.js"></script>
 
- <!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
-<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
-<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
-
-<script src="libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
-
-	<script src="libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
-	<script src="libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
-
-  <script>
-
-		const printPlugins = [
-			RevealNotes, 
-			RevealHighlight,
-			RevealMath,
-			RevealAnimate,
-			RevealChalkboard, 
+<script>
+  const printPlugins = [
+      RevealNotes,
+      RevealHighlight,
+      RevealMath.MathJax3,
+      RevealAnimate,
+      RevealChalkboard, 
 			RevealEmbedTweet,
 			RevealChart,
 		];
@@ -484,6 +188,7 @@ $1 に引数が渡されて、$tmp として実行されている</p>
 				// poll
 				// question
 				// seminar
+				Verticator 
 				 ]
 
 
@@ -491,93 +196,93 @@ $1 に引数が渡されて、$tmp として実行されている</p>
 		// https://revealjs.com/initialization/
 		Reveal.initialize({
 			controls: true,
-			controlsTutorial: true,
-			controlsLayout: 'bottom-right',
-			controlsBackArrows: 'faded',
-			progress: true,
-			slideNumber: false,
-			//#showSlideNumber "all" "print" "speaker"
-			hash: true,//#  hash: false,
-			//# respondToHashChanges: true,
-			//# history: false,
-			keyboard: true,
-			//#keyboardCondition: null,
-			overview: true,
-			center: true,
-			touch: true,
-			loop: false,
-			rtl: false,
-			//#navigationMode: 'default', linear grid
-			shuffle: false,
-			fragments: true,
-			fragmentInURL: false,
-			embedded: false,
-			help: true,
-			//#pause: true
-			showNotes: false,
-			autoPlayMedia: false, // TODO fix this to a nullable value
-			//#preloadIframes: null. true false
-			//#autoAnimate: true
-			//#autoAnimateMatcher: null,
-			//#autoAnimateEasing: 'ease',
-			//autoAnimateDuration: 1.0,
-			//#autoAnimateUnmatched: true
-			//#autoAnimateStyles: []
-			autoSlide: 0, // TODO fix this to a falseable value
-			autoSlideStoppable: true,
-			autoSlideMethod: '0',
-			defaultTiming: 120,
-			mouseWheel: false,
-			//#previewLinks: false
-			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
-			//#postMessageEvents: false,
-			//#focusBodyOnPageVisibilityChange: true,
-			transition: 'slide',
-			transitionSpeed: 'default',
-			backgroundTransition: 'fade',
-			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
-			//#pdfSeparateFragments: true,
-			//#pdfPageHeightOffset: -1,
-			viewDistance: 3,
-			//#mobileViewDistance: 2,
-			display: 'block',
-			//#hideInactiveCursor: true,
-			//#hideCursorTime: 5000
+      controlsTutorial: true,
+      controlsLayout: 'bottom-right',
+      controlsBackArrows: 'faded',
+      progress: true,
+      slideNumber: false,
+      //#showSlideNumber "all" "print" "speaker"
+      hash: true, //# hash: false,
+      //# respondToHashChanges: true,
+      //# history: false,
+      keyboard: true,
+      //#keyboardCondition: null,
+      overview: true,
+      center: true,
+      touch: true,
+      loop: false,
+      rtl: false,
+      //#navigationMode: 'default', linear grid
+      shuffle: false,
+      fragments: true,
+      fragmentInURL: false,
+      embedded: false,
+      help: true,
+      //#pause: true
+      showNotes: false,
+      autoPlayMedia: false, // TODO fix this to a nullable value
+      //#preloadIframes: null. true false
+      //#autoAnimate: true
+      //#autoAnimateMatcher: null,
+      //#autoAnimateEasing: 'ease',
+      //autoAnimateDuration: 1.0,
+      //#autoAnimateUnmatched: true
+      //#autoAnimateStyles: []
+      autoSlide: 0, // TODO fix this to a falseable value
+      autoSlideStoppable: true,
+      autoSlideMethod: '0',
+      defaultTiming: 120,
+      mouseWheel: false,
+      //#previewLinks: false
+      //#postMessage: true, // TODO : this can cause issues with the vscode api ???
+      //#postMessageEvents: false,
+      //#focusBodyOnPageVisibilityChange: true,
+      transition: 'slide',
+      transitionSpeed: 'default',
+      backgroundTransition: 'fade',
+      //#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+      //#pdfSeparateFragments: true,
+      //#pdfPageHeightOffset: -1,
+      viewDistance: 3,
+      //#mobileViewDistance: 2,
+      display: 'block',
+      //#hideInactiveCursor: true,
+      //#hideCursorTime: 5000
 
-			// Parallax Background
-			parallaxBackgroundImage: '',
-			parallaxBackgroundSize: '',
-			parallaxBackgroundHorizontal: 0,
-			parallaxBackgroundVertical: 0,
-			
-			//Presentation Size
-			width: 960,
+      // Parallax Background
+      parallaxBackgroundImage: '',
+      parallaxBackgroundSize: '',
+      parallaxBackgroundHorizontal: 0,
+      parallaxBackgroundVertical: 0,
+
+      //Presentation Size
+      width: 960,
 			height: 700,
 			margin: 0.04,
-			minScale: 0.2,
-			maxScale: 2,
-			disableLayout: false,
+      minScale: 0.2,
+      maxScale: 2,
+      disableLayout: false,
 
-			audio: {
-				prefix: 'audio/', 	// audio files are stored in the "audio" folder
-				suffix: '.ogg',		// audio files have the ".ogg" ending
-				textToSpeechURL: null,  // the URL to the text to speech converter
-				defaultNotes: false, 	// use slide notes as default for the text to speech converter
-				defaultText: false, 	// use slide text as default for the text to speech converter
-				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
-				autoplay: false,	// automatically start slideshow
-				defaultDuration: 5,	// default duration in seconds if no audio is available
-				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
-				playerOpacity: 0.05,	// opacity value of audio player if unfocused
-				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
-				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
-			},
-			
-			chalkboard: { // font-awesome.min.css must be available
-					//src: "chalkboard/chalkboard.json",
-					storage: "chalkboard-demo",
-				},
-			
+      audio: {
+        prefix: 'audio/', // audio files are stored in the "audio" folder
+        suffix: '.ogg', // audio files have the ".ogg" ending
+        textToSpeechURL: null, // the URL to the text to speech converter
+        defaultNotes: false, // use slide notes as default for the text to speech converter
+        defaultText: false, // use slide text as default for the text to speech converter
+        advance: 0, // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+        autoplay: false, // automatically start slideshow
+        defaultDuration: 5, // default duration in seconds if no audio is available
+        defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+        playerOpacity: 0.05, // opacity value of audio player if unfocused
+        playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+        startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+      },
+      
+      chalkboard: { // font-awesome.min.css must be available
+        //src: "chalkboard/chalkboard.json",
+        storage: "chalkboard-demo",
+      },
+      
 			customcontrols: {
 					controls: [
       						{
@@ -587,14 +292,17 @@ $1 に引数が渡されて、$tmp として実行されている</p>
 						  action: 'Reveal.toggleOverview();'
 						}
 						,
-						{ icon: '<i class="fa fa-pen-square"></i>',
-						  title: 'Toggle chalkboard (B)',
-						  action: 'RevealChalkboard.toggleChalkboard();'
-						},
-						{ icon: '<i class="fa fa-pen"></i>',
-						  title: 'Toggle notes canvas (C)',
-						  action: 'RevealChalkboard.toggleNotesCanvas();'
-						}
+      {
+        icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+      },
+      {
+        icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+      }
+      
 				]
 			},
 			chart: {
@@ -663,9 +371,7 @@ $1 に引数が渡されて、$tmp として実行されている</p>
 			  }, 2500);
 			
     }
-		
-
-	</script>
+</script>
 
 </body>
 

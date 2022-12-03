@@ -102,7 +102,7 @@ https://alt9800.github.io/sample-maps/deck-sample
 
 (補足 : MapLibre GL JSなどの方が厳密にはOSMを使っている！という感じがする)
 
---- 
+---
 
 Leafletを使っているときの困りごとをいくつか解決してくれる。
 

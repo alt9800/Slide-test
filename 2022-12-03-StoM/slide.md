@@ -27,7 +27,13 @@ title: "2022-12-03"
 
 ---
 
-<iframe src="https://duckduckgo.com/?q=%E8%B5%A4%E7%85%89%E7%93%A6%E6%96%87%E5%8C%96%E9%A4%A8&atb=v315-1&iax=images&ia=images"></iframe>
+<object data="https://duckduckgo.com/?q=%E8%B5%A4%E7%85%89%E7%93%A6%E6%96%87%E5%8C%96%E9%A4%A8&atb=v315-1&iax=images&ia=images"
+width="800"
+height="800"
+type="text/html">
+</object>
+https://duckduckgo.com/?q=%E8%B5%A4%E7%85%89%E7%93%A6%E6%96%87%E5%8C%96%E9%A4%A8&atb=v315-1&iax=images&ia=images
+
 
 ---
 

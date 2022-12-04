@@ -24,10 +24,6 @@ https://github.com/alt9800/sample-maps
 
 ---
 
-![image](https://event.ospn.jp/event_images/sessions/efc_%E7%94%B0%E4%B8%AD.png)
-
----
-
 福岡市エンジニアカフェから来ました。
 
 ---

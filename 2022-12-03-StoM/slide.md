@@ -138,7 +138,15 @@ Leafletを使っているときの困りごとをいくつか解決してくれ�
 
 <iframe src="https://tenjinbc.jp/"></iframe>
 
-https://wiki.openstreetmap.org/wiki/Indoor_Mapping
+[天神ビッグバン特設サイト](https://tenjinbc.jp/)
+
+
+---
+
+来年やりたいこと↓
+[インドアマッピング](https://wiki.openstreetmap.org/wiki/Indoor_Mapping)
+
+大型商業施設の屋内タグ付け
 
 ---
 
